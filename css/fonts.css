@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'HankenGrotesk-Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/static/HankenGrotesk-Medium.ttf'), format('woff');
+  }

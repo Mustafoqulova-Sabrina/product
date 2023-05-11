@@ -1,61 +1,128 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: sans-serif;
-}
-header{
-    padding: 20px;
-}
-header > nav > a > img{
-    width: 50px;
-    vertical-align: middle;
-}
-header > nav > a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 20px;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-left: 30px;
-    margin-left: 30px;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-header > nav{
-    margin-bottom: 30px;
-}
-header > img{
-    width: 100%;
-}
-section{
-    text-align: center;
-}
-section > h2{
-    font-size: 60px;
-}
-section > div{
-    background-color: rgb(199, 230, 105);
-    width: 400px;
-    display: inline-block;
-    margin: 50px;
-    color: #fff;
-    padding: 5px;
+.card {
+
+    font-family: "Hanken Grotesk", sans-serif;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    background: linear-gradient
+    180deg, 
+    hsl(252, 100%, 67%),hsl(241, 81%, 54%);
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+
+.card-result {
+    background-color:  hsl(234, 77%, 53%);
+    width: 300px;
+    border-radius: 20px;
+    height: 370px;
+    text-align: center;
+    padding:  20px 30px 30px;
+    color: #fff;
 
 }
-section > div > img {
-    background-color: #fff;
-    width: 100%;
-    height: 400%;
-    border-radius: 20px 20px 0px 0px;
+.card-result > h3{
+color:hsl(241, 100%, 89%);
+margin-bottom: 20px;
+}
+.card-result-circle{
+    background-color:  hsl(234, 73%, 33%);
+    width: 150px ;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.card-result-circle > h1{
+  padding-top: 35px;
+  font-size: 50px;
+}
+.card-result-circle > span{
+    color: #a39c9c;
+}
+.card-result > h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-result > p{
+    color: #a39c9c;
+    margin-bottom: -10px
+
 }
 
-section > div > h4{
-    font-size: 28px;
+.card-summary {
+ background-color: #fff;
+ width: 250px;
+ border-radius: 20px;
 }
-section > div > span{
-    font-size: 24px;
-    font-weight: bolder;
+.card-summary >h3{
+    color:  hsl(224, 30%, 27%);
+    margin-top: 10px;
+    margin-bottom:15px ;
+    margin-left: 20px;
+}
+.skill-card > span > img{
+    vertical-align: middle;
+    margin-top: 10px;
+}
+.skill-card{
+margin-left: 20px;
+margin-bottom: 15px;
+background-color: hsl(0, 100%, 67%, 0.5);
+width: 200px;
+height: 40px;
+border-radius: 10px;
+display: flex;
+justify-content: space-between;
+}
+.pink{
+    color:hsl(0, 100%, 67%) ;
+    background-color: hsl(0, 100%, 67%, 0.1);  
+}
+.yellow{
+    color:hsl(39, 100%, 56%) ;
+    background-color:hsl(39, 100%, 56% , 0.1) ;
+}
+.green{
+    color:hsl(166, 100%, 37%) ;
+    background-color:hsl(166, 100%, 37%, 0.1);
+}
+.blue{
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.1);
+}
+.skill-card-percent > span{
+    color: #000;
+}
+.skill-card-percent{
+    color: #968e8e;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.card-summary > button{
+    margin-left: 20px;
+    margin-top:10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: hsl(224, 30%, 27%);
+    border: hsl(224, 30%, 27%);
+}
+.card-summary > button:hover{
+    background-color:hsl(234, 73%, 33%);
 }
